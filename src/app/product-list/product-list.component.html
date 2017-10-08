@@ -1,0 +1,10 @@
+<div>
+  <mat-toolbar color="primary">
+    <i class="fa fa-apple"></i>Apple Products
+  </mat-toolbar>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let product of products" class="list-row" (click)="gotoDetails(product)">
+      <a matline>{{ product.name }}</a>
+    </mat-list-item>
+  </mat-nav-list>
+</div>
